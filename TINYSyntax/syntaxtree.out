@@ -1,0 +1,77 @@
+
+TINY Syntax Analyse!
+
+>>> Syntax error at line 14: unexpected token -> ID, name= R
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: |
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: |
+
+>>> Syntax error at line 14: unexpected token -> ID, name= c
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: &
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: &
+
+>>> Syntax error at line 14: unexpected token -> ID, name= d
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: ?
+      
+>>> Syntax error at line 14: unexpected token -> ERROR: ?
+
+>>> Syntax error at line 15: unexpected token -> ID, name= d
+      
+>>> Syntax error at line 15: unexpected token -> ERROR: ?
+      
+>>> Syntax error at line 15: unexpected token -> ERROR: ?
+
+>>> Syntax error at line 15: unexpected token -> ERROR: &
+      
+>>> Syntax error at line 15: unexpected token -> ERROR: &
+
+>>> Syntax error at line 15: unexpected token -> ID, name= b
+      
+>>> Syntax error at line 15: unexpected token -> ERROR: #
+      
+>>> Syntax error at line 15: unexpected token -> ERROR: #
+
+>>> Syntax error at line 23: Code ends before file
+
+TINY Syntax tree:
+    Assign to: a
+        Op: or
+            Op: or
+                Op: and
+                    Id: a
+                    Const: 8
+                Id: b
+            Op: not
+                Id: b
+    Assign to: b
+        Id: regex
+    Assign to: R
+    Assign to: c
+    Assign to: d
+    Assign to: c
+        Id: regex
+    Assign to: d
+    Assign to: b
+    Read: x
+    If
+        Op: <
+            Const: 0
+            Id: x
+        For
+            Assign to: fact
+                Id: x
+            Const: 1
+            Assign to: fact
+                Op: *
+                    Id: fact
+                    Id: x
+            Assign to: x
+                Op: +
+                    Id: x
+                    Const: 1
+        Write
+            Id: fact
