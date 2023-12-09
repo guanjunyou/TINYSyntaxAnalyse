@@ -1,0 +1,23 @@
+a := (a and 8 or b) or not (3 + 5);
+b:= regex R | c&d?;
+c:= regex d?&b#;
+read x;
+if  (0<x) 
+  for  fact := x downto 1 do 
+    fact := fact * x;
+    x:=x+1
+  enddo;
+  write fact
+else
+ a+=3;
+ s:=4
+endif;
+s:=5
+
+
+
+
+
+
+
+

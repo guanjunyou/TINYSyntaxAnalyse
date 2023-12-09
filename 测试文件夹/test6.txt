@@ -1,0 +1,19 @@
+x := a and (b or c) or (not d and (e or f));
+b:= regex a | c&d&e? | f&g?;
+read x;
+if  (0<x) 
+  for  fact := x downto 1 do 
+    fact := fact * x;
+    x:=x+1
+  enddo;
+  write fact
+else
+ a:=3;
+ s:=4
+endif;
+Value := regex A & (B | C);
+for i := 10 downto 1 do
+  Value := Value * i
+enddo
+
+

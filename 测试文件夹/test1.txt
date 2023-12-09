@@ -1,0 +1,1 @@
+a := (a and 8 or b) or not b
